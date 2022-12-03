@@ -1,0 +1,20 @@
+@charset 'utf-8'; // In css single quotes are not allowed but in sass they acceptable
+@use 'scss/base/base';
+
+// Components
+@use 'scss/components/buttons';
+@use 'scss/components/typography';
+// Layout
+@use 'scss/sections/navbar';
+@use 'scss/sections/intro-section';
+@use 'scss/sections/companies';
+@use 'scss/sections/services';
+@use 'scss/sections/testimonials';
+@use 'scss/sections/faq';
+@use 'scss/sections/portfolio';
+@use 'scss/sections/get-started';
+@use 'scss/sections/footer';
+
+
+// Lightbox 
+@import "~glightbox/dist/css/glightbox.min";

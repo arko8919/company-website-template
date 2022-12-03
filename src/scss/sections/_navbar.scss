@@ -1,0 +1,27 @@
+@use '../helpers/index' as *;
+
+.menu {
+    @include gradient;
+    width: 100vw;
+
+    .nav-item {
+        padding: 0 0.7;
+        .nav-link {
+            color: $grey-800;
+            text-transform: capitalize;
+            font-weight: 600;
+        }
+    }
+}
+
+
+
+.navbar-brand {
+    img {
+        width: 50%;
+        @include media-breakpoint-up(md) {
+            width: 100%;
+        }
+
+    }
+}

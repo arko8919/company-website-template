@@ -1,0 +1,48 @@
+@use '../helpers/index' as *;
+@use '../components/animations' as *;
+
+.intro-section {
+    @include gradient;
+    padding: 10rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    color: $grey-800;
+
+    h1 {
+        color: $grey-800;
+    }
+}
+
+.intros {
+    .video-box {
+        position: relative;
+
+        // >> Make video button blend into image
+        span {
+            i {
+                font-size: 6rem;
+                color: $secondary;
+            }
+        }
+    }
+}
+
+
+.border-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    border: 0.55rem solid $white;
+    border-radius: 50%;
+    animation: pulse-border 1.5s linear infinite;
+
+    &--border-1 {
+        animation-delay: 1s;
+    }
+
+    &--border-2 {
+        animation-delay: 1.5s;
+    }
+}
